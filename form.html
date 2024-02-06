@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        h1:hover {
+            cursor: pointer;
+            color: brown;
+        }
+
+        h4 {
+            color: rgb(155, 42, 165);
+            text-decoration: underline;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .submit {
+            background-color: cornflowerblue;
+        }
+
+        .submit:hover {
+            cursor: pointer;
+            background-color: aqua;
+        }
+
+        .reset {
+            background-color: crimson;
+        }
+
+        .reset:hover {
+            cursor: pointer;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><u>Registration Form</u></h1>
+    </header>
+    <main>
+        <form action="/action.js">
+
+            <label for="name">
+                <strong>Name: </strong> <input type="text" id="name" placeholder="Enter Name">
+            </label>
+            <br><br>
+            <label for="mail">
+                <strong>Mail:</strong> <input type="email" id="mail" placeholder="Mail Address">
+            </label>
+            <br><br>
+            <label for="password">
+                <strong>Password:</strong> <input type="password" id="password" placeholder="Password">
+            </label>
+            <br><br>
+            <label for="city"><strong>City:</strong> <select name="city" id="city">
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Chennai">Chennai</option>
+                </select></label>
+            <br><br>
+            <label for="date">
+                <strong>Date:</strong> <input type="date" id="date" name="MyDate">
+            </label>
+            <br><br>
+            <label for="age">
+                <strong>Age:</strong> <input type="number" name="Age" id="age" placeholder="Enter Age">
+            </label>
+
+            <br><br>
+            <h4>Select Class</h4>
+
+            <label for="201">
+                <input type="radio" data-="Class XI" name="Class" id="201">Class XI
+            </label>
+            <br><br>
+            <label for="202">
+                <input type="radio" data-="Class XII" name="Class" id="202">Class XII
+            </label>
+            <h4>Select Subject</h4>
+
+            <label for="101">
+                <input type="checkbox" data-="Math" name="Class" id="101">Math
+            </label>
+            <br><br>
+            <label for="102">
+                <input type="checkbox" data-="Physics" name="Class" id="102">Physics
+            </label>
+            <br><br>
+            <label for="103">
+                <input type="checkbox" data-="Chemistry" name="Class" id="103">Chemistry
+            </label>
+            <br><br>
+            <label for="104">
+                <input type="checkbox" data-="English" name="Class" id="104">English
+            </label>
+            <br><br>
+            <h4>Feedback:</h4>
+
+            <textarea name="feedback" id="101" placeholder="Please Enter Your feedback" cols="20" rows="3"></textarea>
+            <br><br>
+            <input class="submit" type="submit" value="Submit Now">
+            <input class="reset" type="reset" value="Reset Now">
+
+        </form>
+
+    </main>
+    <br>
+    <footer><strong>Contact me- </strong>
+        <br>
+        <em>Mail id- </em>shuvajit8841@gmail.com.
+        <br>
+        <em>Phone no- </em>8798088805.
+    </footer>
+</body>
+
+</html>
